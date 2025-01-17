@@ -54,3 +54,12 @@ curl -X POST http://127.0.0.1:8080/receipts/process -H "Content-Type: applicatio
 
 
 ``` 
+
+### Step 7 - There will be a Unique id that would be generated, use that to check how many points was generated. 
+
+Replace the <RECEIPT_ID> with the generated Unique ID
+
+```bash
+curl http://127.0.0.1:8080/receipts/<RECEIPT_ID>/points
+
+```
