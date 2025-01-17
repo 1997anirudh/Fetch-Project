@@ -23,3 +23,35 @@ docker run -p 8080:8080 receipt-processor-api
 ```bash
 curl http://127.0.0.1:8080/
 ```
+
+### Step 6 - Curl an example case to generate receipr_id
+
+```bash
+curl -X POST http://127.0.0.1:8080/receipts/process -H "Content-Type: application/json" -d '{
+  "retailer": "M&M Corner Market",
+  "purchaseDate": "2022-03-20",
+  "purchaseTime": "14:33",
+  "items": [
+    {
+      "shortDescription": "Gatorade",
+      "price": "2.25"
+    },
+    {
+      "shortDescription": "Gatorade",
+      "price": "2.25"
+    },
+    {
+      "shortDescription": "Gatorade",
+      "price": "2.25"
+    },
+    {
+      "shortDescription": "Gatorade",
+      "price": "2.25"
+    }
+  ],
+  "total": "9.00"
+}'
+
+```bash
+
+
