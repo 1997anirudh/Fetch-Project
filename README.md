@@ -24,7 +24,7 @@ docker run -p 8080:8080 receipt-processor-api
 curl http://127.0.0.1:8080/
 ```
 
-### Step 6 - Curl an example case to generate receipr_id
+### Step 6 - Curl an example case to generate receipt_id
 
 ```bash
 curl -X POST http://127.0.0.1:8080/receipts/process -H "Content-Type: application/json" -d '{
