@@ -7,11 +7,19 @@ Download the necessary file for the receipt processor API.
 Make sure Docker is installed on the system where the test will be performed. You can check the Docker installation by running the following command in the Terminal:
 ```bash
 docker --version
+```
 
-### Step 3 - Run the following commands from where the folder is installed 
+### Step 3: Run the following commands from where the folder is installed 
+```bash
 docker build -t receipt-processor-api .
+```
+
 ### Step 4 -  Run the following commands from where the folder is installed 
+```bash
 docker run -p 8080:8080 receipt-processor-api
+```
+### Step 5 -
 
-### Step 5 - curl http://127.0.0.1:8080/
-
+```bash
+curl http://127.0.0.1:8080/
+```
