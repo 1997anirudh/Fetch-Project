@@ -24,8 +24,8 @@ def calculate_points(receipt):
     points += (len(receipt['items']) // 2) * 5
 
     # Apply the LLM-specific rule: 5 points if the total is greater than 10.00
-    if total > 10.00:
-        points += 5
+    # if total > 10.00:
+    #     points += 5
 
     # Points based on item descriptions
     for item in receipt['items']:
